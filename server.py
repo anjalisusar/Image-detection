@@ -9,8 +9,8 @@ tf_version = tf.__version__
 st.write(f"Using TensorFlow version: {tf_version}")
 
 # Load models without compiling
-fake_model = tf.keras.models.load_model('finalmodel.h5', compile=False)
-real_model = tf.keras.models.load_model('my_model.h5', compile=False)
+fake_model = tf.keras.models.load_model('https://drive.google.com/file/d/1VedDwkNP8FLukDmJOvfzh517bZPSNo2j/view?usp=drive_link', compile=False)
+real_model = tf.keras.models.load_model('https://drive.google.com/open?id=10suO7bxu62nswnZRAwz95AobOUQq49Cx&usp=drive_copy', compile=False)
 
 # Recompile with a compatible optimizer
 fake_model.compile(optimizer='adam')  # Replace with a compatible optimizer if needed
